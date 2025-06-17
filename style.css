@@ -16,7 +16,8 @@ header {
     padding: 80px 20px;
 }
 
-button {
+a.button {
+    display: inline-block;
     padding: 10px 20px;
     font-size: 18px;
     background-color: #00c9ff;
@@ -24,10 +25,40 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #f0f0f0;
+    padding: 8px;
+    text-align: left;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
 }
 
 footer {
     text-align: center;
     padding: 20px 0;
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+    a.button {
+        width: 100%;
+    }
+    th, td {
+        font-size: 14px;
+    }
 }
