@@ -1,83 +1,113 @@
 body {
-    margin: 0;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to bottom, #ffffff, #e9f5ff);
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: #0a0f2c;
+  color: #ffffff;
 }
 
 header {
-    text-align: center;
-    padding: 40px 0;
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #e0e0e0;
+  background: #0e132f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-.hero {
-    text-align: center;
-    padding: 60px 20px;
+header h1 {
+  color: #00fff7;
+  font-size: 28px;
 }
 
-a.button {
-    display: inline-block;
-    padding: 10px 24px;
-    font-size: 18px;
-    background-color: #4da3ff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+nav a {
+  color: #ffffff;
+  margin: 0 20px;
+  text-decoration: none;
 }
 
-a.button:hover {
-    background-color: #257dff;
+nav a:hover {
+  color: #00fff7;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+.banner {
+  height: 100vh;
+  background: url('https://tse3.mm.bing.net/th?id=OIP.g_ov7OtevItmH4ZZYZOI5gHaEJ&pid=Api') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-th, td {
-    border: 1px solid #e0e0e0;
-    padding: 12px;
-    text-align: left;
+.banner h2 {
+  font-size: 48px;
+  color: #00fff7;
+  margin-bottom: 20px;
 }
 
-th {
-    background-color: #f5f5f5;
+.banner-btn {
+  padding: 15px 30px;
+  background: #00fff7;
+  color: #0a0f2c;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
-main {
-    flex: 1;
-    max-width: 900px;
-    margin: auto;
-    padding: 0 20px;
+.produtos,
+.tecnologia,
+.sobre,
+.depoimentos,
+footer {
+  padding: 60px 80px;
+}
+
+.produtos h3,
+.tecnologia h3,
+.sobre h3,
+.depoimentos h3 {
+  color: #00fff7;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  background: #12183c;
+  padding: 20px;
+  border-radius: 10px;
+  width: calc(25% - 30px);
+  box-shadow: 0 0 15px rgba(0, 255, 247, 0.2);
+}
+
+.card h4 {
+  color: #00fff7;
+  margin-top: 10px;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+.card button {
+  background: #00fff7;
+  color: #0a0f2c;
+  padding: 10px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
 }
 
 footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #f8f9fa;
-    border-top: 1px solid #e0e0e0;
-    margin-top: auto;
-}
-
-@media (max-width: 600px) {
-    h1 {
-        font-size: 24px;
-    }
-    a.button {
-        width: 100%;
-    }
-    th, td {
-        font-size: 14px;
-    }
+  background: #0e132f;
+  color: #aaa;
+  text-align: center;
 }
